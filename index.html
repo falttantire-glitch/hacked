@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<title>HACKED BY NİULA85</title>
+<style>
+@keyframes glitch {
+  3%{text-shadow:7px 7px 0px red;}
+  6%{text-shadow:-9px 4px 0px #00FF00;transform:translate(4px,-10px) skewX(3240deg);}
+  7%{text-shadow:3px -4px 0px #00FF00;}
+  9%{text-shadow:0px 0px 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;transform:translate(0px,0px) skewX(0deg);}
+  2%, 54%{transform:translateX(0px) skew(0deg);}
+  55%{transform:translate(-2px,6px) skew(-5530deg);}
+  56%{text-shadow:0px 0px 10px #FFFFFF;transform:translate(0px,0px) skew(0deg);}
+  57%{text-shadow:7px 7px 0px #00FF00;transform:translate(4px,-10px) skew(-70deg);}
+  58%{text-shadow:0px 0px 10px #FFFFFF;transform:translate(0px,0px) skew(0deg);}
+  62%{text-shadow:3px -4px 0px #00FF00;transform:translate(0px,20px) skew(0deg);}
+  63%{text-shadow:0px 0px 10px #FFFFFF;transform:translate(4px,-2px) skew(0deg);}
+  64%{transform:translate(1px,3px); skew(-230deg);}
+  65%{transform:translate(-7px,2px); skew(120deg);}
+  66%{transform:translate(0px,0px) skew(0deg);}
+}
+
+body, html {
+  overflow: hidden;
+  margin: 0;
+  background: #1A1A1A;
+  height: 100vh;
+  box-shadow: 0 0 150px 30px #000000 inset;
+  background-image: url('http://darkhorsegames.net/wp-content/uploads/2014/03/NoiseMap.gif'), linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+  animation: noise 20ms linear infinite, flicker 5s infinite;
+  color: #00FF00;
+  font-family: 'Courier New', monospace;
+  user-select: none;
+}
+
+@keyframes noise {
+  0% { background-position: 0 0; }
+  100% { background-position: 10px 10px; }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.8; }
+}
+
+.glitch-wrapper {
+  padding-top: 150px;
+  width: 100vw;
+  text-align: center;
+  animation: glitch 2s linear infinite;
+  margin-bottom: 100px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.glitch-text {
+  position: relative;
+  z-index: 2;
+  opacity: .9;
+  margin: 0 auto;
+  text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00;
+  animation: glitch 3s infinite;
+  font-size: 120px;
+  color: #00FF00;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.image-container {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.image-container img {
+  max-width: 300px;
+  height: auto;
+  filter: brightness(0.8) contrast(1.2);
+  transition: transform 0.3s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.mutebutton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#mutetext {
+  color: #00FF00;
+  cursor: pointer;
+  font-size: 16px;
+  text-shadow: 0 0 5px #00FF00;
+}
+
+#start-msg {
+  font-size: 20px;
+  margin-top: 40px;
+  display: none;
+  cursor: pointer;
+  user-select: none;
+  text-shadow: 0 0 10px #00FF00;
+}
+
+.blood-drip {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: #00FF00;
+  border-radius: 50% 50% 0 0;
+  animation: drip 2s infinite;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes drip {
+  0% { top: -20px; opacity: 0; }
+  10% { opacity: 1; }
+  100% { top: 100vh; opacity: 0; }
+}
+
+/* ALT MESAJ STİLİ */
+.footer-message {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #00FF00;
+  text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+  animation: glitch 3s infinite;
+  font-family: 'Courier New', monospace;
+  z-index: 999;
+}
+</style>
+</head>
+<body>
+  <div class="glitch-wrapper" id="start-area">
+    <div class="image-container">
+      <img src="resim.png" alt="Hacked Image">
+    </div>
+    <div class="glitch-text">HACKED BY NİULA85</div>
+    <div id="start-msg">Buraya tıklayın</div>
+    <div class="blood-drip"></div>
+  </div>
+
+  <!-- EKLENEN KIRMIZI YAZILAR -->
+  <div style="text-align: center; margin-top: -80px;">
+    <p class="glitch-text" style="color: red; font-size: 72px; text-shadow: 0 0 15px red;">
+      Messi gibi 6-7 sunucuya çalım attık.
+    </p>
+    <p class="glitch-text" style="color: red; font-size: 48px; text-shadow: 0 0 10px red;">
+      siz hala site açmaya devam edicekmisiniz ?
+    </p>
+  </div>
+
+  <!-- ALT MESAJ -->
+  <div class="footer-message glitch-text">adamı sikerler demedim mi şaşkın</div>
+
+  <audio id="backgroundsong" src="music.mp3" loop autoplay muted></audio>
+
+  <div class="mutebutton">
+    <p id="mutetext" onclick="toggleMusic()">Şarkı kapalı</p>
+  </div>
+
+<script>
+  const music = document.getElementById('backgroundsong');
+  const mutetext = document.getElementById('mutetext');
+  const startMsg = document.getElementById('start-msg');
+
+  function playMusic() {
+    music.muted = false;
+    music.play().catch(() => {
+      startMsg.style.display = 'block';
+    });
+  }
+
+  function toggleMusic() {
+    if (music.muted) {
+      music.muted = false;
+      mutetext.textContent = 'Şarkı açık';
+    } else {
+      music.muted = true;
+      mutetext.textContent = 'Şarkı kapalı';
+    }
+  }
+
+  window.addEventListener('load', playMusic);
+
+  document.body.addEventListener('click', () => {
+    if (music.paused) {
+      playMusic();
+      startMsg.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
